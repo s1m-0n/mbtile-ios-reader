@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'mbtile-ios-reader_Example' do
+  pod 'mbtile-ios-reader', :path => '../'
+
+  target 'mbtile-ios-reader_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
