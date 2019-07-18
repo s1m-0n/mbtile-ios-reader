@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# mbtile-ios-reader
-=======
 # mbtile-ios-reader
 
 [![CI Status](https://img.shields.io/travis/s1m-0n/mbtile-ios-reader.svg?style=flat)](https://travis-ci.org/s1m-0n/mbtile-ios-reader)
