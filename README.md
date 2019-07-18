@@ -27,4 +27,3 @@ s1m-0n, simon.wicha@gaiaresources.com.au
 ## License
 
 mbtile-ios-reader is available under the MIT license. See the LICENSE file for more info.
->>>>>>> Initial commit
