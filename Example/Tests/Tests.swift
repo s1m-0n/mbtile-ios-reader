@@ -1,5 +1,4 @@
 import XCTest
-import mbtile-ios-reader
 
 class Tests: XCTestCase {
     

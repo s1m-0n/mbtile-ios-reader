@@ -1,0 +1,6 @@
+framework module mbtile_ios_reader {
+  umbrella header "mbtile-ios-reader-umbrella.h"
+
+  export *
+  module * { export * }
+}

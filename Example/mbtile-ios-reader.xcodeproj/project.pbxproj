@@ -13,6 +13,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		CDFFEAE522E06E4900DCF8D9 /* countries-raster.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = CDFFEAE422E06E4900DCF8D9 /* countries-raster.mbtiles */; };
 		E41C78C9FF2554CD0A1AD469 /* Pods_mbtile_ios_reader_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AD5409C8A3B12B567B95105 /* Pods_mbtile_ios_reader_Example.framework */; };
 		EABF59C3FB50DB45363BE71F /* Pods_mbtile_ios_reader_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1109A3A9A9D1C8D07B7A9C35 /* Pods_mbtile_ios_reader_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -29,7 +30,7 @@
 
 /* Begin PBXFileReference section */
 		1109A3A9A9D1C8D07B7A9C35 /* Pods_mbtile_ios_reader_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mbtile_ios_reader_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B18FCD5E5B306907685D49C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2B18FCD5E5B306907685D49C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		2C43FAFB6354C33E2190A14A /* Pods-mbtile-ios-reader_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbtile-ios-reader_Example.debug.xcconfig"; path = "Target Support Files/Pods-mbtile-ios-reader_Example/Pods-mbtile-ios-reader_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5DB35F235A6821118F7C7B85 /* Pods-mbtile-ios-reader_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbtile-ios-reader_Tests.debug.xcconfig"; path = "Target Support Files/Pods-mbtile-ios-reader_Tests/Pods-mbtile-ios-reader_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* mbtile-ios-reader_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mbtile-ios-reader_Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,9 +45,10 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6AD5409C8A3B12B567B95105 /* Pods_mbtile_ios_reader_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mbtile_ios_reader_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E9D196A622155CCA1E87D9C /* Pods-mbtile-ios-reader_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbtile-ios-reader_Tests.release.xcconfig"; path = "Target Support Files/Pods-mbtile-ios-reader_Tests/Pods-mbtile-ios-reader_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		97D06473BC51AC7AD4D49EF7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		A77AE27AB59AB6A7EC11C7A8 /* mbtile-ios-reader.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = "mbtile-ios-reader.podspec"; path = "../mbtile-ios-reader.podspec"; sourceTree = "<group>"; };
+		97D06473BC51AC7AD4D49EF7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A77AE27AB59AB6A7EC11C7A8 /* mbtile-ios-reader.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "mbtile-ios-reader.podspec"; path = "../mbtile-ios-reader.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C8CB04D750C21F78EC2B4C94 /* Pods-mbtile-ios-reader_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbtile-ios-reader_Example.release.xcconfig"; path = "Target Support Files/Pods-mbtile-ios-reader_Example/Pods-mbtile-ios-reader_Example.release.xcconfig"; sourceTree = "<group>"; };
+		CDFFEAE422E06E4900DCF8D9 /* countries-raster.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = "countries-raster.mbtiles"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +79,6 @@
 				5DB35F235A6821118F7C7B85 /* Pods-mbtile-ios-reader_Tests.debug.xcconfig */,
 				7E9D196A622155CCA1E87D9C /* Pods-mbtile-ios-reader_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -105,6 +106,7 @@
 		607FACD21AFB9204008FA782 /* Example for mbtile-ios-reader */ = {
 			isa = PBXGroup;
 			children = (
+				CDFFEAE322E06E4900DCF8D9 /* map-data */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -158,6 +160,14 @@
 				1109A3A9A9D1C8D07B7A9C35 /* Pods_mbtile_ios_reader_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDFFEAE322E06E4900DCF8D9 /* map-data */ = {
+			isa = PBXGroup;
+			children = (
+				CDFFEAE422E06E4900DCF8D9 /* countries-raster.mbtiles */,
+			);
+			path = "map-data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +237,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -246,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDFFEAE522E06E4900DCF8D9 /* countries-raster.mbtiles in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -271,12 +283,16 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-mbtile-ios-reader_Example/Pods-mbtile-ios-reader_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GCDWebServer/GCDWebServer.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 				"${BUILT_PRODUCTS_DIR}/mbtile-ios-reader/mbtile_ios_reader.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCDWebServer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/mbtile_ios_reader.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +444,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -473,6 +490,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -488,7 +506,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -503,7 +521,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -524,7 +542,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mbtile-ios-reader_Example.app/mbtile-ios-reader_Example";
 			};
 			name = Debug;
@@ -542,7 +560,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mbtile-ios-reader_Example.app/mbtile-ios-reader_Example";
 			};
 			name = Release;

@@ -1,0 +1,31 @@
+PODS:
+  - GCDWebServer (3.5.2):
+    - GCDWebServer/Core (= 3.5.2)
+  - GCDWebServer/Core (3.5.2)
+  - mbtile-ios-reader (0.1.0):
+    - GCDWebServer (~> 3.0)
+    - SQLite.swift (~> 0.12.0)
+  - SQLite.swift (0.12.2):
+    - SQLite.swift/standard (= 0.12.2)
+  - SQLite.swift/standard (0.12.2)
+
+DEPENDENCIES:
+  - mbtile-ios-reader (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GCDWebServer
+    - SQLite.swift
+
+EXTERNAL SOURCES:
+  mbtile-ios-reader:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GCDWebServer: ead88cd14596dd4eae4f5830b8877c87c8728990
+  mbtile-ios-reader: 98f86f291631038965f0445e464440dc56b8d574
+  SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
+
+PODFILE CHECKSUM: c4a14f7db8c042b7c12a12d3062589e4cd208ae8
+
+COCOAPODS: 1.6.1

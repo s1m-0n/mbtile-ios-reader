@@ -7,18 +7,37 @@
 //
 
 import UIKit
+import MapKit
+import mbtile_ios_reader
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, MKMapViewDelegate {
+    
+    @IBOutlet weak var mapView: MKMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        mapView.delegate = self
+        mapView.showsUserLocation = true;
+        setupTileRenderer()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func setupTileRenderer() {
+        let template = "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+        let tilesURL : URL = Bundle.main.url(forResource: "countries-raster", withExtension: "mbtiles")!
+        let overlay = CustomTileOverlay(urlTemplate: template, mbtileURL: tilesURL)
+        overlay.canReplaceMapContent = true
+        mapView.addOverlay(overlay, level: .aboveLabels)
     }
-
+    
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        
+        let tileOverlay = overlay as? MKTileOverlay
+        
+        if (tileOverlay == nil){
+            return MKOverlayRenderer()
+        }
+        
+        return MKTileOverlayRenderer(tileOverlay: tileOverlay!)
+    }
 }
 
