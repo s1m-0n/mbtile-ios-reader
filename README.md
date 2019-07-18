@@ -22,7 +22,7 @@ pod 'mbtile-ios-reader'
 
 ## Author
 
-s1m-0n, simon.wicha@gaiaresources.com.au
+s1m-0n, simon.wicha@nomis-development.net
 
 ## License
 
