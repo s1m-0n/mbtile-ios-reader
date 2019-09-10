@@ -48,6 +48,8 @@ public class CustomTileOverlay : MKTileOverlay {
         
         if (tileData != nil){
             result(tileData as Data?, nil)
+        } else {
+            super.loadTile(at: path, result: result)
         }
     }
     
