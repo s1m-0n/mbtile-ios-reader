@@ -64,7 +64,7 @@
     FMResultSet *results = [self.db executeQuery:@"select tile_data from tiles where zoom_level = ? and tile_column = ? and tile_row = ?",
                             [NSNumber numberWithInteger:zoom],
                             [NSNumber numberWithInteger:x],
-                            [NSNumber numberWithInteger:y]];
+                            [NSNumber numberWithInteger:column]];
     
     NSLog(@"select tile_data from tiles where zoom_level = %ld and tile_column = %ld and tile_row = %d",(long)zoom,(long)x,column);
     
