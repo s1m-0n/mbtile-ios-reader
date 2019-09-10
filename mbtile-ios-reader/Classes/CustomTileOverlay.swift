@@ -27,6 +27,7 @@ public class CustomTileOverlay : MKTileOverlay {
     }
     
     override public func url(forTilePath path: MKTileOverlayPath) -> URL {
+        print("OpenStreetMap access")
         return URL(string: String(format: "http://tile.openstreetmap.org/%i/%i/%i.png", path.z, path.x, path.y))!
         
     }
