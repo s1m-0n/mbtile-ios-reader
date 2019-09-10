@@ -64,16 +64,13 @@
     FMResultSet *results = [self.db executeQuery:@"select tile_data from tiles where zoom_level = ? and tile_column = ? and tile_row = ?",
                             [NSNumber numberWithInteger:zoom],
                             [NSNumber numberWithInteger:x],
-                            [NSNumber numberWithInteger:column]];
+                            [NSNumber numberWithInteger:y]];
     
     NSLog(@"select tile_data from tiles where zoom_level = %ld and tile_column = %ld and tile_row = %d",(long)zoom,(long)x,column);
     
-    NSLog(@"select tile_data from tiles where zoom_level = %ld and tile_column = %ld and tile_row = %d",(long)zoom,(long)x,column);
     if ([results next]) {
-        NSLog(@"Tile Data found");
         return [results dataForColumn:@"tile_data"];
     } else {
-        NSLog(@"NO Tile Data found");
         return nil;
     }
 }
