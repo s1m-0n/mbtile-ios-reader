@@ -20,6 +20,12 @@ public class CustomTileOverlay : MKTileOverlay {
         super.init(urlTemplate: URLTemplate)
     }
     
+    //Initializer for ObjC
+    @objc public init(urlTemplate URLTemplate: NSString?, mbtileURL: NSURL) {
+        tilesURL = URL(string: mbtileURL.absoluteString!)
+        super.init(urlTemplate: URLTemplate as String?)
+    }
+    
     override public func url(forTilePath path: MKTileOverlayPath) -> URL {
         return URL(string: String(format: "http://tile.openstreetmap.org/%i/%i/%i.png", path.z, path.x, path.y))!
         
