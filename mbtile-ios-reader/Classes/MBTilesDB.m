@@ -65,7 +65,7 @@
                             [NSNumber numberWithInteger:zoom],
                             [NSNumber numberWithInteger:x],
                             [NSNumber numberWithInteger:column]];
-    FMResultSet *results2 = [self.db executeQuery:@"select count(*) from tiles"];
+
     NSLog(@"select tile_data from tiles where zoom_level = %ld and tile_column = %ld and tile_row = %d",(long)zoom,(long)x,column);
     
     if ([results next]) {
