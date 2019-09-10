@@ -68,7 +68,14 @@
     
     NSLog(@"select tile_data from tiles where zoom_level = %ld and tile_column = %ld and tile_row = %d",(long)zoom,(long)x,column);
     
-    return [results next] ? [results dataForColumn:@"tile_data"] : nil;
+    NSLog(@"select tile_data from tiles where zoom_level = %ld and tile_column = %ld and tile_row = %d",(long)zoom,(long)x,column);
+    if ([results next]) {
+        NSLog(@"Tile Data found");
+        return [results dataForColumn:@"tile_data"];
+    } else {
+        NSLog(@"NO Tile Data found");
+        return nil;
+    }
 }
 
 @end
