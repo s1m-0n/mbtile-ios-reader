@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'mbtile-ios-reader'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'mbtile-ios-reader is a framework for integrating mbtile map-files for offline mapping'
 
 # This description is used to generate tags and improve search results.
