@@ -22,9 +22,10 @@ class ViewController: UIViewController, MKMapViewDelegate {
     }
     
     func setupTileRenderer() {
-        let template = "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
-        let tilesURL : URL = Bundle.main.url(forResource: "countries-raster", withExtension: "mbtiles")!
-        let overlay = CustomTileOverlay(urlTemplate: template, mbtileURL: tilesURL)
+//        let template = "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+        let tilesURL_1 : URL = Bundle.main.url(forResource: "vic-0-15", withExtension: "mbtiles")!
+        let tilesURL_2 : URL = Bundle.main.url(forResource: "vic-15", withExtension: "mbtiles")!
+        let overlay = CustomTileOverlay(urlTemplate: nil, mbtileURL: [tilesURL_1, tilesURL_2])
         overlay.canReplaceMapContent = true
         mapView.addOverlay(overlay, level: .aboveLabels)
     }

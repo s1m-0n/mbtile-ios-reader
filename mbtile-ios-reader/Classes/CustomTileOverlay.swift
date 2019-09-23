@@ -13,38 +13,36 @@ import MapKit
 public class CustomTileOverlay : MKTileOverlay {
     let cache = NSCache<AnyObject, AnyObject>()
     let operationQueue = OperationQueue()
-    let tilesURL : URL!
+    let tilesURLArray : [URL]!
     
-    public init(urlTemplate URLTemplate: String?, mbtileURL: URL) {
-        tilesURL = mbtileURL
+    public init(urlTemplate URLTemplate: String?, mbtileURL: [URL]) {
+        tilesURLArray = mbtileURL
         super.init(urlTemplate: URLTemplate)
     }
     
     //Initializer for ObjC
-    @objc public init(urlTemplate URLTemplate: NSString?, mbtileURL: NSURL) {
-        tilesURL = URL(string: mbtileURL.absoluteString!)
+    @objc public init(urlTemplate URLTemplate: NSString?, mbtileURL: [NSURL]) {
+        tilesURLArray = mbtileURL as [URL]//URL(string: mbtileURL.absoluteString!)
         super.init(urlTemplate: URLTemplate as String?)
     }
-    
-//     override public func url(forTilePath path: MKTileOverlayPath) -> URL {
-//         print("OpenStreetMap access")
-//         return URL(string: String(format: "http://tile.openstreetmap.org/%i/%i/%i.png", path.z, path.x, path.y))!
-        
-//     }
-    
     
 
     override public func loadTile(at path: MKTileOverlayPath,
                                   result: @escaping ((Data?, Error?) -> Void)) {
-        
-        
-        
-        let tilesDB : MBTilesDB = MBTilesDB(dburl: tilesURL)
-        let zz : NSInteger = path.z
-        let xx : NSInteger = path.x
-        let yy : NSInteger = path.y
-        print("\(xx) - \(yy) - \(zz)")
-        let tileData = tilesDB.tile(forZoomLevel: zz, tileColumn:xx, tileRow: yy)
+        var tileData: Data?
+        for tileURL in tilesURLArray {
+            let tilesDB : MBTilesDB = MBTilesDB(dburl: tileURL)
+            let zz : NSInteger = path.z
+            let xx : NSInteger = path.x
+            let yy : NSInteger = path.y
+            print("\(xx) - \(yy) - \(zz)")
+            let tmpTileData = tilesDB.tile(forZoomLevel: zz, tileColumn:xx, tileRow: yy)
+            if tmpTileData != nil {
+                print("mbtile-file: \(tileURL))")
+                tileData = tmpTileData
+                break
+            }
+        }
         
         if (tileData != nil){
             result(tileData as Data?, nil)

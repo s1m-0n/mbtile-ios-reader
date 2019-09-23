@@ -13,7 +13,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		CDFFEAE522E06E4900DCF8D9 /* countries-raster.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = CDFFEAE422E06E4900DCF8D9 /* countries-raster.mbtiles */; };
+		CDE13A382338A1C900ACCC98 /* vic-0-15.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = CDE13A362338A1C900ACCC98 /* vic-0-15.mbtiles */; };
+		CDE13A392338A1C900ACCC98 /* vic-15.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = CDE13A372338A1C900ACCC98 /* vic-15.mbtiles */; };
 		E41C78C9FF2554CD0A1AD469 /* Pods_mbtile_ios_reader_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AD5409C8A3B12B567B95105 /* Pods_mbtile_ios_reader_Example.framework */; };
 		EABF59C3FB50DB45363BE71F /* Pods_mbtile_ios_reader_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1109A3A9A9D1C8D07B7A9C35 /* Pods_mbtile_ios_reader_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -48,7 +49,8 @@
 		97D06473BC51AC7AD4D49EF7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A77AE27AB59AB6A7EC11C7A8 /* mbtile-ios-reader.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "mbtile-ios-reader.podspec"; path = "../mbtile-ios-reader.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C8CB04D750C21F78EC2B4C94 /* Pods-mbtile-ios-reader_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbtile-ios-reader_Example.release.xcconfig"; path = "Target Support Files/Pods-mbtile-ios-reader_Example/Pods-mbtile-ios-reader_Example.release.xcconfig"; sourceTree = "<group>"; };
-		CDFFEAE422E06E4900DCF8D9 /* countries-raster.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = "countries-raster.mbtiles"; sourceTree = "<group>"; };
+		CDE13A362338A1C900ACCC98 /* vic-0-15.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = "vic-0-15.mbtiles"; sourceTree = "<group>"; };
+		CDE13A372338A1C900ACCC98 /* vic-15.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = "vic-15.mbtiles"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +167,8 @@
 		CDFFEAE322E06E4900DCF8D9 /* map-data */ = {
 			isa = PBXGroup;
 			children = (
-				CDFFEAE422E06E4900DCF8D9 /* countries-raster.mbtiles */,
+				CDE13A362338A1C900ACCC98 /* vic-0-15.mbtiles */,
+				CDE13A372338A1C900ACCC98 /* vic-15.mbtiles */,
 			);
 			path = "map-data";
 			sourceTree = "<group>";
@@ -257,7 +260,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDFFEAE522E06E4900DCF8D9 /* countries-raster.mbtiles in Resources */,
+				CDE13A382338A1C900ACCC98 /* vic-0-15.mbtiles in Resources */,
+				CDE13A392338A1C900ACCC98 /* vic-15.mbtiles in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
