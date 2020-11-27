@@ -1,6 +1,6 @@
 {
   "name": "mbtile-ios-reader",
-  "version": "0.1.0",
+  "version": "1.0.4",
   "summary": "mbtile-ios-reader is a framework for integrating mbtile map-files for offline mapping",
   "description": "mbtile-ios-reader is a framework that helps to easily integrate mbtile map data into MapKit for offline usage.",
   "homepage": "https://github.com/s1m-0n/mbtile-ios-reader",
@@ -13,13 +13,14 @@
   },
   "source": {
     "git": "https://github.com/s1m-0n/mbtile-ios-reader.git",
-    "tag": "0.1.0"
+    "tag": "1.0.4"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "swift_version": "5.0",
+  "swift_versions": "5.0",
   "source_files": "mbtile-ios-reader/Classes/**/*.{swift,h,m}",
+  "static_framework": true,
   "libraries": "sqlite3",
   "dependencies": {
     "GCDWebServer": [
@@ -27,6 +28,13 @@
     ],
     "SQLite.swift": [
       "~> 0.12.0"
+    ],
+    "GoogleMaps": [
+      "~> 4.0.0"
+    ],
+    "Google-Maps-iOS-Utils": [
+      "~> 3.4.1"
     ]
-  }
+  },
+  "swift_version": "5.0"
 }

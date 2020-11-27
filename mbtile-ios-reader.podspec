@@ -34,10 +34,12 @@ Pod::Spec.new do |s|
   # s.resource_bundles = {
   #   'mbtile-ios-reader' => ['mbtile-ios-reader/Assets/*.png']
   # }
-
+  s.static_framework = true
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.library = 'sqlite3'
   s.dependency 'GCDWebServer', '~> 3.0'
   s.dependency 'SQLite.swift', '~> 0.12.0'
+  s.dependency 'GoogleMaps', '~> 4.0.0'
+  s.dependency 'Google-Maps-iOS-Utils', '~> 3.4.1'
 end

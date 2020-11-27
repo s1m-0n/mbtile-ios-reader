@@ -2,8 +2,31 @@ PODS:
   - GCDWebServer (3.5.2):
     - GCDWebServer/Core (= 3.5.2)
   - GCDWebServer/Core (3.5.2)
-  - mbtile-ios-reader (0.1.0):
+  - Google-Maps-iOS-Utils (3.4.1):
+    - Google-Maps-iOS-Utils/Clustering (= 3.4.1)
+    - Google-Maps-iOS-Utils/Geometry (= 3.4.1)
+    - Google-Maps-iOS-Utils/Heatmap (= 3.4.1)
+    - Google-Maps-iOS-Utils/QuadTree (= 3.4.1)
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/Clustering (3.4.1):
+    - Google-Maps-iOS-Utils/QuadTree
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/Geometry (3.4.1):
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/Heatmap (3.4.1):
+    - Google-Maps-iOS-Utils/QuadTree
+    - GoogleMaps
+  - Google-Maps-iOS-Utils/QuadTree (3.4.1):
+    - GoogleMaps
+  - GoogleMaps (4.0.0):
+    - GoogleMaps/Maps (= 4.0.0)
+  - GoogleMaps/Base (4.0.0)
+  - GoogleMaps/Maps (4.0.0):
+    - GoogleMaps/Base
+  - mbtile-ios-reader (1.0.4):
     - GCDWebServer (~> 3.0)
+    - Google-Maps-iOS-Utils (~> 3.4.1)
+    - GoogleMaps (~> 4.0.0)
     - SQLite.swift (~> 0.12.0)
   - SQLite.swift (0.12.2):
     - SQLite.swift/standard (= 0.12.2)
@@ -13,9 +36,12 @@ DEPENDENCIES:
   - mbtile-ios-reader (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - GCDWebServer
     - SQLite.swift
+  trunk:
+    - Google-Maps-iOS-Utils
+    - GoogleMaps
 
 EXTERNAL SOURCES:
   mbtile-ios-reader:
@@ -23,9 +49,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   GCDWebServer: ead88cd14596dd4eae4f5830b8877c87c8728990
-  mbtile-ios-reader: 98f86f291631038965f0445e464440dc56b8d574
+  Google-Maps-iOS-Utils: 9a3bfc50dab84dda55ab7fd1c3af39120798ea57
+  GoogleMaps: b7f7fc569a9b354a3af0d9729dbec40957b7d41e
+  mbtile-ios-reader: 6d12ec84205932cbffcd301c207bee63b682add3
   SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
 
 PODFILE CHECKSUM: c4a14f7db8c042b7c12a12d3062589e4cd208ae8
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.9.0
