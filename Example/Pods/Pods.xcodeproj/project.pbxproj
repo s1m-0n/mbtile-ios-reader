@@ -147,7 +147,7 @@
 		C64E97D5FC0802B08D7CA36AEC74A422 /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F29D9D47BF871B1F64E017D7B5ABE1C /* CustomFunctions.swift */; };
 		C74B13649B850E565DDE958703159960 /* GMUClusterItem.h in Headers */ = {isa = PBXBuildFile; fileRef = E6BFFEB6CC18B07E77276E49F57818FA /* GMUClusterItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC9852A96AF9EDFCDE01B4EAFE38135C /* GMUWeightedLatLng.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E607F7EDE4355FFE83E468F3650572 /* GMUWeightedLatLng.m */; };
-		CD0DF85A2570D85200639720 /* GoogleMapsTileOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0DF8592570D85200639720 /* GoogleMapsTileOverlay.swift */; };
+		CD0DF87A2570DC8E00639720 /* GoogleMapsTileOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0DF8792570DC8E00639720 /* GoogleMapsTileOverlay.swift */; };
 		CFA8D12DC44FDB3883979C1FD770E1CF /* GMUDefaultClusterIconGenerator+Testing.h in Headers */ = {isa = PBXBuildFile; fileRef = F74AFC5E00FB97D0589B87BC087AF29A /* GMUDefaultClusterIconGenerator+Testing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CFC945869C722B862999837F67FF0091 /* GCDWebServerPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 049C9B2B3C222A25F6E88DCA4DB6C00D /* GCDWebServerPrivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		D1C78E3FA55258CD43348070225D9C8F /* GMUGeoJSONParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C34571D1E492DE0B8B494D1F097132 /* GMUGeoJSONParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -429,7 +429,7 @@
 		C530A0AAB9B3B719B889DA30BD4C0864 /* GMUClusterRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GMUClusterRenderer.h; path = src/Clustering/View/GMUClusterRenderer.h; sourceTree = "<group>"; };
 		C59F5DE10ECB4A4E3A7AC75CF4AEB91E /* GCDWebServer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GCDWebServer.debug.xcconfig; sourceTree = "<group>"; };
 		C5FCF74AF2FF5521653255AFF53F7366 /* GMULineString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GMULineString.m; path = src/Geometry/Model/GMULineString.m; sourceTree = "<group>"; };
-		CD0DF8592570D85200639720 /* GoogleMapsTileOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsTileOverlay.swift; sourceTree = "<group>"; };
+		CD0DF8792570DC8E00639720 /* GoogleMapsTileOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleMapsTileOverlay.swift; path = "mbtile-ios-reader/Classes/GoogleMapsTileOverlay.swift"; sourceTree = "<group>"; };
 		CDA000CB3FBB7D6A77EBD703A8032089 /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
 		CEA1C1073651CD11E5EAFB9310ADE83E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
 		D110205A7E34E508AFD6ECB7275CCF80 /* SQLiteObjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLiteObjc.h; path = Sources/SQLiteObjc/include/SQLiteObjc.h; sourceTree = "<group>"; };
@@ -803,7 +803,7 @@
 			isa = PBXGroup;
 			children = (
 				724069DF71BC4202C9B399A24C683556 /* AppleMapsTileOverlay.swift */,
-				CD0DF8592570D85200639720 /* GoogleMapsTileOverlay.swift */,
+				CD0DF8792570DC8E00639720 /* GoogleMapsTileOverlay.swift */,
 				B2AD96B13F1C509322EF74644971A9AB /* FMDatabase.h */,
 				4FA3058DAA707994E60845A367F1F080 /* FMDatabase.m */,
 				7297E3A420A133DB6B1B886368E3CEDB /* FMDatabaseAdditions.h */,
@@ -1314,7 +1314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				341B8D86FEE23FBC5DC95D77BB432A64 /* AppleMapsTileOverlay.swift in Sources */,
-				CD0DF85A2570D85200639720 /* GoogleMapsTileOverlay.swift in Sources */,
+				CD0DF87A2570DC8E00639720 /* GoogleMapsTileOverlay.swift in Sources */,
 				4EB7FA2B84A97B92E0AD8CBD649B0A5B /* FMDatabase.m in Sources */,
 				9097E598C57C27830B3BD7E04FEBDAF8 /* FMDatabaseAdditions.m in Sources */,
 				04F6079B8D81781E735631328394C608 /* FMDatabasePool.m in Sources */,
